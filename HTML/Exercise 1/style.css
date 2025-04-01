@@ -1,0 +1,27 @@
+body{
+     background-color: black
+}
+
+.Heading{
+     background-color: rgb(0, 0, 0);
+     color: rgb(255, 249, 249);
+     width: 120px;
+}
+
+.video {
+     width: 230px;
+     height: 300;
+}
+
+.Iner {
+     color: white;
+}
+
+.button{
+     color: black;
+}
+
+.Audio{
+     width: 200;
+     height: 100;
+}

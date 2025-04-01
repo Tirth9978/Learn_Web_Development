@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Selector</title>
+     <style>
+          /* Universial Selectors */
+          *{
+               padding: 0;
+               margin: 0;
+          }
+
+
+          /* This is Selectors in the CSS */
+          .red{
+               background-color: red;
+          }
+          #green{
+               background-color: greenyellow;
+          }
+          /* This is the Child Selectors  */
+          .red>p{
+               color: white;
+          }
+          #green>p{
+               color:brown ;
+          }
+
+          /* Descendant Selectors */
+          #descendant p{
+               background-color: blue;
+          }
+     </style>
+</head>
+<body>   
+     <div class="red">
+          I am Tirth Patel.
+          <p>I am From India and I am good boy.</p>
+     </div>
+
+     <div id ="green">
+          I am a coder .
+          <p>I am From India and I am good boy.</p>
+     </div>
+
+     <div class ="descendant"> 
+          <article>
+               <p>I like to help someone.</p>
+          </article>
+     </div>
+</body>
+</html>

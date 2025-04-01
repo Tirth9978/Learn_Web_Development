@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Images , Tables</title>
+</head>   
+<body>
+
+     <!-- To add Images in the website -->
+     <img height="200" src="image.png" alt="Sumset">
+     <!-- <> -->
+     <br>
+
+
+     <!-- 
+          Table : 
+               To make tables in the website . 
+               We can Inprove it using CSS . 
+     -->
+
+     <table>
+          <tr>
+               <th>Name</th>
+               <th>Language Known</th>
+               <th>Nick Name</th>
+          </tr>
+          <tr>
+               <td>Tirth</td>
+               <td>C++/HTML</td>
+               <td>Kalimm</td>
+          </tr>
+          
+          <tr>
+               <td>Rohan</td>
+               <td>CSS</td>
+               <td>Tom</td>
+          </tr>
+     </table>
+
+     <!-- 
+          Output :  
+               Name	Language Known	Nick Name
+               Tirth	C++/HTML	Kalimm
+               Rohan	CSS	Tom
+     -->
+
+     <table>
+          <tr>
+               <th>Name</th>
+               <th>Language Known</th>
+               <th>Nick Name</th>
+          </tr>
+          <tr>
+               <td>Tirth</td>
+               <td>C++/HTML</td>
+               <!-- Rowspan : To marge the rows with give number-->
+               <td rowspan="2">Kalimm</td>
+          </tr>
+          
+          <tr>
+               <td>Rohan</td>
+               <td>CSS</td>
+          </tr>
+     </table>
+
+     <!-- 
+          Output : 
+               Name	Language Known	Nick Name
+               Tirth	C++/HTML	Kalimm
+               Rohan	CSS
+               (Here Kalimm is comman for both Tirth and Rohan)
+     -->
+
+     
+     <table>
+          <tr>
+               <th>Name</th>
+               <th>Language Known</th>
+               <th>Nick Name</th>
+          </tr>
+          <tr>
+               <!-- colspan: To marge the rows with give number -->
+               <td colspan="2">Tirth</td>
+               <td>Kalimm</td>
+          </tr>
+          
+          <tr>
+               <td>Rohan</td>
+               <td>CSS</td>
+               <td>tom</td>
+          </tr>
+     </table>
+
+     <!-- 
+          OutPut : 
+          
+               Name	Language Known	Nick Name
+               Tirth	Kalimm
+               Rohan	CSS	tom
+     -->
+</body>
+</html>

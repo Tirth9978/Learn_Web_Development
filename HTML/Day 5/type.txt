@@ -1,0 +1,22 @@
+text	     :  Allows the user to type a single line of text.
+password	:  Allows the user to type a password.
+submit	:  Represents a button that, when pressed, submits the form.
+reset	:  Represents a button that, when pressed, resets all the form controls to their initial values.
+radio	:  Represents an option in a set of options that are mutually exclusive with each other.
+checkbox	:  Represents an option in a set that may be selected independently of other options.
+button	:  Represents a clickable button.
+color	:  Allows the user to select a color.
+date	     :  Allows the user to select a date.
+datetime-local : 	Allows the user to select a date and time with no time zone.
+email	: Allows the user to enter an email address.
+file	     : Allows the user to select one or more files from their device storage.
+hidden	: Represents a value that is not displayed but is submitted to the server.
+image	: Defines an image that acts as a submit button.
+month	: Allows the user to select a month and year.
+number	: Allows the user to enter a number.
+range	: Allows the user to select a number from a range.
+search	: Allows the user to enter a search query string.
+tel	     : Allows the user to enter a telephone number.
+time	     : Allows the user to select a time.
+url	     : Allows the user to enter a URL.
+week	     : Allows the user to select a week.

@@ -1,0 +1,20 @@
+|-----------------------------------|
+|Element       ID        Classes    |
+|-----------------------------------|
+|Tirth        1157         ICT      |
+|Shlok        1156         ICT      |
+|                                   |
+|                                   |
+|Aryan        1463         ICT-CS   |
+|Aaditya      1482         ICT-CS   |
+|-----------------------------------|
+
+
+--> Here same Id can't assign to Tirth and Shlok but same class can .
+
+--> In HTML , We can't assign the same id to differnt elements . But we can for classes 
+
+--> For CSS Info :  
+     # : for ID 
+     . : for Classes
+
