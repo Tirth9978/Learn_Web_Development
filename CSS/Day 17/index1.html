@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Two Side-by-Side Divs</title>
+     <style>
+          * {
+               background-color: black;
+               box-sizing: border-box;
+          }
+
+          .wrapper {
+               display: flex;
+               /* justify-content: center; */
+               gap: 20px; /* Space between the divs */
+               margin-top: 22px;
+          }
+
+          .container {
+               background-color: rgb(22, 22, 22);
+               color: white;
+               padding: 22px;
+               border-radius: 12px;
+               width: 333px;
+               height: 75vh;
+               overflow-y: auto;
+          }
+     </style>
+</head>
+
+<body>
+     <div class="wrapper">
+          <div class="container">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. ...
+          </div>
+
+          <div class="container">
+               This is the second div on the right. You can put any content here like images, buttons, cards, or even forms.
+          </div>
+     </div>
+</body>
+
+</html>
