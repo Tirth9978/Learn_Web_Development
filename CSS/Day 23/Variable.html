@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Variable</title>
+     <style>
+          *{
+               margin: 0;
+               padding: 0;
+          }
+
+          /* Global Variable */
+
+          :root {
+               --colour : rgb(63, 63, 192);
+               --seccolour : rgb(131, 131, 169);
+          }
+
+
+          .first{
+               background-color: var(--colour);
+          }
+          ul li{
+               list-style: none;
+               margin: 12px;
+               padding: 12px;
+          }
+
+          ul li:first-child {
+
+               /* Local Variable */
+               --colour: rgb(108, 158, 108);
+               background-color: var(--colour);
+               
+          }
+          ul{
+               display: flex;
+          }
+          .container{
+               background-color: var(--seccolour);
+          }
+     </style>
+</head>
+<body>
+     <div class="first">
+          <nav>
+               <ul>
+                    <li>Home</li>
+                    <li>About me</li>
+                    <li>Contect</li>
+               </ul>
+          </nav>
+     </div>
+     <div class="container">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil perferendis nam at.
+     </div>
+</body>
+</html>

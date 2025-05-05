@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Position</title>
+     <style>
+          * {
+               margin: 0;
+               padding: 0;
+          }
+
+          .div {
+               border: 2px solid black;
+               margin: 2px;
+               height: 400px;
+               width: 500px;
+               padding: 12px;
+
+          }
+
+          .div1 {
+               background-color: aqua;
+               position: sticky;
+               top:0px;
+               width:100%;
+               height: 111px;
+               /* position: absolute; */
+               /* top: 0px; */
+               /* If z Index is greater than 0 , So that div will be on up  */
+               /* z-index: 1; */
+          }
+
+          .div2 {
+               background-color: blanchedalmond;
+               /* position: relative;
+               top: -123px;
+               left: 32px; */
+          }
+
+          .div3 {
+               background-color: chartreuse;
+               /* Position use in the lock that part while Scrolling the page  */
+               /* position: fixed; */
+               /* bottom: 2px;
+               left: 25vh; */
+          }
+
+          .div4 {
+               background-color: coral;
+          }
+          .parent{
+               margin: 20px;
+               padding: 20px;
+               border: 2px solid purple;
+               position: relative;
+               
+               /* Tranform , Filter or perspective properties can also 
+               make an element appear as positioned */
+          }
+     </style>
+</head>
+
+<body>
+     <div class="parent">
+          <div class="div div1"></div>
+          <div class="div div2"></div>
+          <div class="div div3"></div>
+          <div class="div div4"></div>
+     </div>
+
+</body>
+
+</html>

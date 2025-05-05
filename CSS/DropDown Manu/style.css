@@ -1,0 +1,40 @@
+body{
+     margin: 0;
+     padding: 0;
+}
+
+ul{
+     list-style-type: none;
+     background-color: black;
+     color: white;
+}
+
+ul li{
+     display: inline-block;
+     padding: 20px;
+
+}
+
+ul li:hover{
+     background-color: green;
+     color: black;
+}
+.drop{
+     display: none;
+}
+ul li:hover .drop{
+     display: block;
+     position: absolute;
+     margin-left: -20px;
+}
+
+.drop ul {
+     margin: 0;
+     padding: 0;
+     
+}
+
+.drop ul li{
+     display: block;
+
+}

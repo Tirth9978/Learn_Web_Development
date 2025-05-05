@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Navigation Bar</title>
+     <style>
+          body {
+               margin: 0;
+               font-family: Arial, sans-serif;
+          }
+
+          .navbar {
+               background-color: #333;
+               color: white;
+               display: flex;
+               justify-content: space-between;
+               align-items: center;
+               padding: 10px 20px;
+          }
+
+          .logo {
+               font-size: 24px;
+               font-weight: bold;
+          }
+
+          .nav-links {
+               list-style: none;
+               display: flex;
+               gap: 20px;
+          }
+
+          .nav-links li a {
+               color: white;
+               text-decoration: none;
+               font-size: 18px;
+          }
+
+          .nav-links li a:hover {
+               color: #00f7ff;
+               text-shadow: 2px 0px 12px red;
+          }
+     </style>
+</head>
+
+<body>
+     <nav class="navbar">
+          <div class="logo">My Shit</div>
+          <ul class="nav-links">
+               <li><a href="#">Home</a></li>
+               <li><a href="#">About</a></li>
+               <li><a href="#">Services</a></li>
+               <li><a href="#">Contact</a></li>
+          </ul>
+     </nav>
+</body>
+
+</html>
