@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Before and After </title>
+     <style>
+          .boxes::before {
+               content: "DAIICT";
+               color: orange;
+          }
+          .boxes::after{
+               content: "Bye";
+               color: green;
+          }
+
+          .boxes{
+               color: blue;
+          }
+
+          .boxes::selection{
+               color: aqua;
+               background-color: black;
+          }
+     </style>
+</head>
+<body>
+     <div class="boxes">
+          <div class="box">I am Tirth</div>
+          <div class="box">I am from India</div>
+          <div class="box">I am a good boy</div>
+     </div>
+</body>
+</html>
