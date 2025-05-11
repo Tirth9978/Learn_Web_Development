@@ -1,0 +1,78 @@
+:root{
+     --normal : 12px;    
+     --borderR: 30px;
+}
+*{
+     margin: 0;
+     padding: 0;
+}
+.nav{
+     background-color: rgb(56, 56, 249);
+     color: white;
+     padding: 17px;
+     /* position: ab; */
+     position: sticky;
+     top: 0; /* This is required for sticky to work */
+    z-index: 10; /* Ensure it stays above other content */
+}
+ul{
+     display: flex;
+     margin-left: 922px;
+}
+ul li{
+     list-style: none;
+     margin-left: 30px;
+}
+
+input{
+     margin-left: 60px;
+     position: absolute;
+     width: 250px;
+     height: 25px;
+     padding: 0;
+     border-radius: 9px;
+     text-align: center;
+}
+input::placeholder{
+     text-align: center;
+
+}
+.containr{
+     display: flex;
+     background-color: rgba(83, 198, 247, 0.752);
+     margin: 12px;
+     margin-top: 12px;
+}
+.box1{
+     border-radius: var(--borderR);
+     margin-bottom: var(--normal);
+     margin-top: var(--normal);
+     width: 270px;
+     background-color: aqua;
+     padding: 30px;
+     margin-left: 240px;
+}
+.box2{
+     border-radius: var(--borderR);
+     margin-top: var(--normal);
+     margin-bottom: var(--normal);
+     width: 270px;
+     background-color: aqua;
+     padding: 30px;
+     margin-left: 174px;
+}
+img{
+     position: fixed;
+     width: 50px;
+     margin-left: 1193px;
+     margin-top: 380px;
+     border-radius: 2000px;
+}
+.iocn{
+     width: 800px;
+     border: solid black 1.6px;
+     border-radius: var(--normal);
+     padding: 15px;
+     margin-left: 202px;
+     margin-top: 22px;
+}
