@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <style>
+          /* Base menu style */
+          .menu {
+               list-style: none;
+               padding: 0;
+               margin: 0;
+               background: #333;
+               display: flex;
+          }
+
+          /* Top-level items */
+          .menu-item {
+               position: relative;
+               /* VERY important! */
+               padding: 15px 20px;
+               color: white;
+               cursor: pointer;
+          }
+
+          /* Dropdown stays hidden at first */
+          .dropdown {
+               display: none;
+               position: absolute;
+               top: 100%;
+               /* Drop it directly below */
+               left: 0;
+               background: #444;
+               list-style: none;
+               padding: 0;
+               margin: 0;
+          }
+
+          /* Show dropdown on hover */
+          .menu-item:hover .dropdown {
+               display: block;
+          }
+
+          /* Dropdown items */
+          .dropdown li {
+               padding: 10px 15px;
+               color: white;
+               white-space: nowrap;
+          }
+
+          .dropdown li:hover {
+               background: #555;
+          }
+     </style>
+</head>
+
+<body>
+     <ul class="menu">
+          <li class="menu-item">
+               Drinks
+               <ul class="dropdown">
+                    <li>Tea</li>
+                    <li>Coffee</li>
+                    <li>Juice</li>
+               </ul>
+          </li>
+          <li class="menu-item">Meals</li>
+          <li class="menu-item">Desserts</li>
+     </ul>
+</body>
+
+</html>

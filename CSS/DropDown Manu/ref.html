@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <style>
+          .Out {
+               margin: 0;
+               padding: 0;
+               list-style: none;
+               background: #333;
+               display: flex;
+          }
+
+          .Manu {
+               position: relative;
+               padding: 15px 20px;
+               color: white;
+               cursor: pointer;
+          }
+
+          .In {
+               padding: 0;
+               margin: 0;
+               display: none;
+               position: absolute;
+               top: 100%;
+               left: 0;
+               background: #444;
+               list-style: none;
+
+          }
+
+          .Manu:hover .In {
+               display: block;
+          }
+
+          .In li{
+               padding: 10px 15px;
+               color: white;
+               white-space: nowrap;
+          }
+
+          .In li:hover {
+               background: #555;
+          }
+     </style>
+</head>
+
+<body>
+     <ul class="Out">
+          <li class="Manu Item">Home
+               <ul class="In">
+                    <li>Tirth</li>
+                    <li>Patel</li>
+               </ul>
+          </li>
+          <li calss="Manu Item">About Me</li>
+     </ul>
+</body>
+
+</html>
