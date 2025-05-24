@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Animation</title>
+     <style>
+          .container {
+               background-color: rgb(123, 191, 191);
+               height: 80vh;
+               width: 30vw;
+          }
+
+          .box {
+               width: 34px;
+               height: 45px;
+          
+               background-color: aqua;
+               animation-name: Tirth;
+               animation-duration: 3s;
+               animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+               animation-iteration-count: infinite;
+               animation-direction: alternate-reverse;
+          }
+
+          .box-1{
+               background-color: red;
+               color: white;
+               padding: 3px;
+          }
+
+          p{
+               animation: Tirth 50s ease infinite normal;
+          }
+
+          p:hover{
+               animation-name: Tirth;
+               /* animation-play-state: ; */
+               animation-play-state: paused;
+          }
+
+          @keyframes Tirth {
+               from {
+                    transform: translateX(-1090px);    
+               }
+
+               to {
+                    transform: translateX(2500px);
+               }
+          }
+     </style>
+</head>
+
+<body>
+     <div class="container">
+          <div class="box">
+               box
+          </div>
+     </div>
+     <div class="box-1">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto voluptatum possimus cumque molestias ab voluptatem cupiditate laborum deleniti cum beatae.</p>
+     </div>
+</body>
+
+</html>

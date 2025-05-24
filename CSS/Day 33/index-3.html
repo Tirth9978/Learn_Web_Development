@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <style>
+          .box-big{
+               background-color: aqua;
+               height: 500px;
+          }
+          .box{
+               background-color: red;
+               height: 43px;
+               width: 40px;
+               animation: Tirth 3s  infinite normal;
+               animation-fill-mode: forwards;
+          }
+          @keyframes Tirth {
+               0%{
+                    background-color: red;
+                    transform: rotate(20deg);
+               }
+
+               20%{
+                    background-color: rgb(255, 55, 0);
+                    transform: rotate(20deg);
+               }
+               40%{
+                    background-color: rgb(255, 123, 0);
+                    transform: rotate(20deg);
+               }
+
+               80% {
+                    background-color: blue;
+                    transform: rotate(20deg);
+               }
+          }
+     </style>
+</head>
+<body>
+     <div class="box-big">
+          <div class="box">
+
+          </div>
+     </div>
+</body>
+</html>

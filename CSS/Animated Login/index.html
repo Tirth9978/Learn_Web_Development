@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>First Page</title>
+     <style>
+          @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+          * {
+               font-family: "Open Sans", sans-serif;
+          }
+
+          .box {
+               display: grid;
+               grid-template-columns: 287px 674px 287px;
+               grid-template-rows: 62px 325px;
+          }
+
+          .login {
+               grid-column: 2/3;
+               grid-row: 2/3;
+               margin: auto;
+               border: 1px solid black;
+               padding: 67px;
+               background-color: rgb(226, 223, 223);
+               border-radius: 12px;
+               /* transform: ; */
+               transition: all 0.5s ease-in;
+          }
+
+          .login:hover {
+               transform: scale(1.1);
+               box-shadow: 0px 0px 15px 6px black;
+          }
+
+          p {
+               padding: 0;
+               margin: 0;
+               text-align: center;
+               font-size: 18px;
+          }
+
+          .email {
+               width: 240px;
+               border-radius: 6px;
+               border-style: none;
+               height: 31px;
+               text-align: center;
+               font-size: 16px;
+               transition: all 0.5s ease-in;
+          }
+
+          .email:hover {
+               transform: scale(1.1);
+               box-shadow: 0px 0px 15px 2px black;
+          }
+
+          .email::placeholder {
+               font-size: 15px;
+               text-align: center;
+          }
+
+          .ch {
+               /* margin-top: 12px; */
+               cursor: pointer;
+               transition: all 0.5s ease-in;
+          }
+
+          .ch:hover{
+               transform: scale(1.1);
+               box-shadow: 0px 0px 15px 2px black;
+          }
+
+          .q {
+               display: inline;
+          }
+
+          .bu {
+               width: 102px;
+               height: 39px;
+               margin-left: 77px;
+               margin-top: 29px;
+               cursor: pointer;
+               font-size: 16px;
+               border-radius: 6px;
+               border-style: none;
+               transition: all 0.5s ease-in;
+          }
+
+          .bu:hover {
+               transform: scale(1.1);
+               box-shadow: 0px 0px 15px 2px black;
+          }
+     </style>
+</head>
+
+<body>
+     <div class="box">
+          <div class="login">
+               <p>Email</p>
+               <input class="email" type="text" placeholder="Enter the Email" name="" id="">
+               <p style="margin-top: 23px;">Password</p>
+               <input class="email" type="password" placeholder="Enter the Email" name="" id="">
+               <div class="check" style="margin-top: 20px; border: 1px solid black; padding: 16px;border-radius: 7px;">
+                    <input type="checkbox" class="ch">
+                    <p class="q">Trums and condiations</p>
+               </div>
+               <button class="bu">Login</button>
+          </div>
+     </div>
+</body>
+
+</html>

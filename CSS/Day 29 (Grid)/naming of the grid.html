@@ -3,35 +3,29 @@
 <head>
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Grid</title>
+     <title>Document</title>
      <style>
           .boxes{
-               border: 2px solid red;
                display: grid;
-               grid-template-columns: 100px 150px 100px;
-               grid-template-rows: 100px 150px 100px;
-               /* gap: 12px; */
-               row-gap: 12px;
-               column-gap: 12px ;
-              
+               grid-template-columns: [First-1]100px [Second-1]150px [Third-1]100px [t];
+               grid-template-rows: [First-2]100px [Second-2]100px [Third-2]100px [u];
           }
           .box{
                border: 2px solid black;
-               width: 55px;
-               height: 55px;
+               /* width: 55px;
+               height: 55px; */
                margin: 0;
                padding: 0;
-               justify-content: center;
           }
           .box-4{
-               grid-row: 1/3;
-               grid-column: 1/2;
+               grid-row: First-2/Third-2;
+               grid-column: First-1/Second-1;
           }
      </style>
 </head>
 <body>
      <div class="boxes">
-          <div class="box box-1">1</div>
+          <div class="box">1</div>
           <div class="box">2</div>
           <div class="box">3</div>
           <div class="box box-4">4</div>
