@@ -1,0 +1,25 @@
+*{
+     margin: 0;
+     padding: 0;
+}
+
+.main{
+     background-image: url("assets/images/bg.jpg");
+     height: 80vh;
+     position: relative;
+}
+
+.main .box{
+     height: 80vh;
+     position: absolute;
+     top: 0;
+     width: 100vw;
+     opacity: 0.44;
+     background-color: black;
+}
+
+nav{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
