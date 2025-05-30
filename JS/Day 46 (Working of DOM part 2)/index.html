@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <style>
+          .box {
+               width: 34px;
+               height: 34px;
+               margin: 34px;
+               padding: 34px;
+               border: 2px solid black;
+          }
+     </style>
+</head>
+
+<body>
+     <div class="boxes">
+          <div class="box">Tirth Patel</div>
+          <div class="box">Tirth Patel</div>
+          <div class="box">Tirth Patel</div>
+          <div id="blue" class="box">Tirth Patel</div>
+          <div class="box">Tirth Patel</div>
+     </div>
+     <script >
+          // Select elemnet by calss name
+          let a = document.getElementsByClassName("box")
+
+          console.log(a)
+          a[2].style.background = "red";
+          a[2].style.color = "white"
+
+
+          // Get element by Id 
+          let b = document.getElementById("blue")
+          b.style.background = "blue"
+          b.style.color = "white"
+
+          // Get element by the Quary . This will find the only first element
+          document.querySelector(".box").style.backgroundColor = "black";
+          document.querySelector(".box").style.color = "white"
+
+          // Get element by the Quary for all elements
+          let c = document.querySelectorAll(".box") 
+          c.forEach((e) => {
+               e.style.background =  "black"
+               e.style.color = "white" 
+          });
+
+          // Get element by the Tag name.
+          console.log(document.getElementsByTagName("div"))
+     </script>
+</body>
+
+</html>
