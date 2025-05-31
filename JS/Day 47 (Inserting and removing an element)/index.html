@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+<body>
+     <div class="boxes">
+          <div class="box">
+               I am Tirth Patel 
+          </div>
+          <div class="box">
+               I am Tirth Patel 
+          </div>
+          <div class="box">
+               I am Tirth Patel 
+          </div>
+     </div>
+     <div class="box-1" hidden>
+          I am Hidden
+     </div>
+     <script>
+          let a = document.querySelector(".box")
+
+          console.dir(a)
+
+          console.log(a.innerHTML)
+
+          a = document.querySelector(".boxes")
+          console.log(a.innerHTML)
+
+          console.log(a.outerHTML)
+
+          console.log(a.tagName)
+
+          // Changing the innerHTML
+          a = document.querySelector(".box")
+          a.innerHTML = "I am Tom and I am friend of the Tirth"
+     </script>
+</body>
+</html>

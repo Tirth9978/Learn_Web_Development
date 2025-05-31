@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <style>
+          .red{
+               color: red;
+          }
+     </style>
+</head>
+<body>
+     <div class="boxes container main-box">
+          <div class="box item" >
+               I am Tirth Patel 
+          </div>
+          <div class="box">
+               I am Tirth Patel 
+          </div>
+     </div>
+     <script>
+          let div = document.createElement("div")
+          div.innerHTML = "<b>I am new Box</b>"
+          div.setAttribute("class", "new-Box")
+
+
+          // document.querySelector(".boxes").append(div)
+          // document.querySelector(".boxes").before(div)
+          // document.querySelector(".boxes").after(div)
+          // document.querySelector(".boxes").replaceWith(div)
+
+          // document.querySelector(".boxes").insertAdjacentHTML("beforebegin","<b>I am new one</b>")
+          // document.querySelector(".boxes").insertAdjacentHTML("afterend","<b>I am other new one</b>")
+
+          // document.querySelector(".boxes").insertAdjacentHTML("afterbegin","<b>I am new one</b>")
+          // document.querySelector(".boxes").insertAdjacentHTML("beforeend","<b>I am new one</b>")
+          
+          // document.getElementsByClassName("box")[1].remove()
+          // console.log(document.getElementsByClassName("box"))
+
+          // console.log(document.querySelector(".boxes").classList)
+          // console.log(document.querySelector(".boxes").className)
+          // document.querySelector(".boxes").classList.remove(".container")
+          
+          document.querySelector(".box").classList.toggle("red")
+          document.querySelector(".box").classList.toggle("red")
+          document.querySelector(".box").classList.toggle("red")
+     </script>
+</body>
+</html>
