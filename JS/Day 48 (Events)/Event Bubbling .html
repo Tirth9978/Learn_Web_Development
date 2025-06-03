@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Event Bubbling</title>
+     <style>
+          .son{
+               margin: 14px;
+               padding: 14px;
+               background-color: beige;
+               cursor: pointer;
+
+          }
+          .father{
+               margin: 14px;
+               padding: 14px;
+               background-color: rgb(251, 251, 6);
+               cursor: pointer;
+          }
+          .grandfather{
+               margin: 14px;
+               padding: 14px;
+               background-color: rgb(40, 40, 1);
+               cursor: pointer;
+          }
+     </style>
+</head>
+<body>
+     <div class="grandfather">
+          <div class="father">
+               <div class="son">
+                    I am a Son
+               </div>
+          </div>
+     </div>
+
+     <script>
+
+          document.querySelector(".son").addEventListener("click",(e)=>{
+               e.stopPropagation()    // This is the usefun to stop a event Bubbling
+               alert("I am Son")
+          })
+
+          document.querySelector(".father").addEventListener("click",(e)=>{
+               e.stopPropagation()    // This is the usefun to stop a event Bubbling
+               alert("I an Father")
+          })
+
+          document.querySelector(".grandfather").addEventListener("click",(e)=>{
+               e.stopPropagation()    // This is the usefun to stop a event Bubbling
+               alert("I am grandfather")
+          })
+          
+     </script>
+</body>
+</html>

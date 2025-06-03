@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Image Gallery</title>
+  <style>
+    /* body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      background: #f0f0f0;
+    } */
+    /* button {
+      padding: 10px 20px;
+      margin-bottom: 20px;
+      font-size: 16px;
+      cursor: pointer;
+    } */
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+    }
+    .image-container {
+      position: relative;
+      display: inline-block;
+    }
+    .image-container img {
+      width: 200px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+    .remove-btn {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      background: rgba(255, 0, 0, 0.8);
+      color: white;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      font-size: 16px;
+      padding: 2px 6px;
+    }
+  </style>
+</head>
+<body>
+  <button onclick="addImage()">Add Image</button>
+  <div class="gallery" id="gallery"></div>
+
+  <script>
+    function addImage() {
+      const gallery = document.getElementById('gallery');
+
+      const container = document.createElement('div');
+      container.className = 'image-container';
+
+      const img = document.createElement('img');
+      img.src = 'https://picsum.photos/200/150?random=' + Math.floor(Math.random() * 1000);
+      img.alt = 'Random Image';
+
+      const btn = document.createElement('button');
+      btn.innerText = '❌';
+      btn.className = 'remove-btn';
+      btn.onclick = () => container.remove();
+
+      container.appendChild(img);
+      container.appendChild(btn);
+      gallery.appendChild(container);
+    }
+  </script>
+</body>
+</html>

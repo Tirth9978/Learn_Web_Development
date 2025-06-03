@@ -11,3 +11,5 @@ console.log(arr[2])  // 0 based indexing
 console.log(arr.slice(1,4)) // Slicing of an array 
 
 console.log(typeof arr) // Array is the one kind of Object 
+
+arr.for

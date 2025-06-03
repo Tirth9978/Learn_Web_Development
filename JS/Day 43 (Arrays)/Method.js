@@ -35,3 +35,7 @@ console.log(a)
 
 let b = [1,2,3,4,5,6]
 console.log(b.splice(1,2))
+
+let ref = [1,"Tirth","Tom",3,0.3]
+ref.sort()
+console.log(ref)

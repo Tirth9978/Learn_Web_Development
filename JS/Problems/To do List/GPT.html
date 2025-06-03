@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <title>Simple To-Do List</title>
+     <style>
+          body {
+               font-family: Arial, sans-serif;
+               margin: 40px;
+          }
+
+          #todo-list li {
+               margin-bottom: 10px;
+          }
+
+          .done {
+               text-decoration: line-through;
+               color: green;
+          }
+
+          button {
+               margin-left: 10px;
+          }
+     </style>
+</head>
+
+<body>
+
+     <h2>📝 To-Do List</h2>
+
+     <input type="text" id="task-input" placeholder="Enter a task..." />
+     <button onclick="addTask()">Add Task</button>
+
+     <ul id="todo-list"></ul>
+
+     <script>
+          function addTask() {
+               const taskInput = document.getElementById("task-input");
+               const taskText = taskInput.value.trim();
+
+               if (taskText === "") {
+                    alert("Please enter a task.");
+                    return;
+               }
+
+               const li = document.createElement("li");
+
+               const taskSpan = document.createElement("span");
+               taskSpan.textContent = taskText;
+
+               const doneBtn = document.createElement("button");
+               doneBtn.textContent = "Mark Done";
+               doneBtn.onclick = function () {
+                    taskSpan.classList.toggle("done");
+                    this.textContent = taskSpan.classList.contains("done") ? "Undo" : "Mark Done";
+               };
+
+               li.appendChild(taskSpan);
+               li.appendChild(doneBtn);
+
+               document.getElementById("todo-list").appendChild(li);
+               taskInput.value = "";
+          }
+     </script>
+
+</body>
+
+</html>
