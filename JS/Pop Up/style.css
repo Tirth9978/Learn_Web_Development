@@ -1,0 +1,19 @@
+.popup {
+     display: none;
+     width: 26vw;
+     height: 22vh;
+     border: 2px solid black;
+     top: 0;
+     left: 0;
+     justify-content: center;
+     align-items: center;
+     margin-top: 145px;
+     margin-left: 418px;
+     border-style: none;
+     background-color: rgb(219, 219, 219);
+}
+
+#Crose {
+     cursor: pointer;
+     margin-left: 306px;
+}
