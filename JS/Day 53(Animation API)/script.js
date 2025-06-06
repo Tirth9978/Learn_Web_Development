@@ -11,9 +11,9 @@ const animation = square.animate(
 )
 
 document.querySelector("#play").addEventListener("click",()=>{
-     animation.play()
+     animation.play() // Start the Animation
 })
 
 document.querySelector("#pause").addEventListener("click",()=>{
-     animation.pause()
+     animation.pause() // Pause the Animation
 })
