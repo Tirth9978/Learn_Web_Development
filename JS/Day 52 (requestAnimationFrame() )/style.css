@@ -1,0 +1,10 @@
+p {
+     background-color: black;
+     color: white;
+     text-align: center;
+     padding: 30px;
+     width: 130px;
+     position: absolute;
+     left: 0;
+     top: 50px;
+}
