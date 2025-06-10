@@ -13,3 +13,4 @@ function a(x){
 }
 
 console.log(a(2))
+document.addEventListener
