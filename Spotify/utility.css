@@ -1,0 +1,20 @@
+.border { 
+     border: 2px solid red;
+     margin: 3px;
+}
+
+.flex {
+     display: flex;
+}
+.justify-content{
+     justify-content: center;
+}
+
+.align-items{
+     align-items: center;
+}
+
+.bg-black {
+     background-color: black;
+     color: white;
+}
