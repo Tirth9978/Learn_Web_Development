@@ -1,0 +1,18 @@
+body {
+     font-family: Arial, sans-serif;
+     padding: 20px;
+     background: #f0f0f0;
+}
+
+input[type="file"] {
+     margin-bottom: 20px;
+}
+
+#preview {
+     max-width: 100%;
+     height: auto;
+     display: none;
+     border: 2px solid #555;
+     border-radius: 10px;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
