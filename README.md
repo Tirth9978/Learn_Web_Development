@@ -56,4 +56,4 @@ Want to contribute and improve this repository? You can:
 - 💬 Join discussions and contribute to the community.
 
 ### 🚀 Start Your Web Development Journey Today!
-Master web development and build amazing projects with hands-on learning. Happy coding! 🎉
+Master web development and build amazing projects with hands-on learning. Happy coding!! 🎉
