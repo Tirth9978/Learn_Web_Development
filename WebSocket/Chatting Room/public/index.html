@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Chatting Room</title>
+     <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+     <div style="background-color: blue;display: flex;justify-content: center;">
+          <div class="nav">
+               <h1>Chatting Room </h1>
+          </div>
+     </div>
+
+     <div style="display: flex;justify-content: center;align-items: center;">
+          <div class="main">
+               <div class="info">
+                    <div class="content1">I am Tirth</div>
+                    <div class="content2">I am Tirth</div>
+               </div>
+               <hr>
+               <div class="send" style="display: flex;justify-content: center;align-items: center;gap: 17px;">
+                    <input type="text" placeholder="Type...">
+                    <button id="bu">Send</button>
+               </div>
+          </div>
+     </div>
+
+     <!-- Load Socket.IO client first -->
+     <script src="/socket.io/socket.io.js"></script>
+     <!-- Then your script -->
+     <script src="script.js"></script>
+
+</body>
+
+</html>
