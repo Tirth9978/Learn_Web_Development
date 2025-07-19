@@ -29,6 +29,26 @@ function App() {
     })
   }
 
+  const login = async ()=> {
+    const Email = String(document.getElementById("email").value) ;
+    const Password = String(document.getElementById("password").value)
+    await fetch("http://localhost:3000/login" , {
+      method: "POST",
+      headers: {
+        'Content-Type': 'application/json'
+      },
+
+      body : JSON.stringify({email : Email , password:Password})
+    })
+    .then(res => res.json() )
+    .then(data => {
+      console.log(data)
+    })
+    .catch(err => {
+      console.log(err)
+    })
+  }
+
   return (
     <>
       <div>
@@ -44,6 +64,15 @@ function App() {
           id='password'
         />
         <button onClick={sending}>Submit</button>
+      </div>
+      <div>
+        <input type="text"
+          placeholder='Email' id='SignUpemail' />
+        <input type="password"
+          placeholder='password'
+          id='SignUppassword'
+        />
+        <button onClick={login}>Login</button>
       </div>
     </>
   )
