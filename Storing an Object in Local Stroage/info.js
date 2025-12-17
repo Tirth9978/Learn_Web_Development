@@ -6,3 +6,9 @@ localStorage.setItem('userData', JSON.stringify(user));
 const storedUserData = localStorage.getItem('userData');
 const userObject = JSON.parse(storedUserData);
 console.log(userObject.name); // Output: Bob
+
+
+localStorage.removeItem('username');
+
+localStorage.clear(); // Clear All Iteam 
+
